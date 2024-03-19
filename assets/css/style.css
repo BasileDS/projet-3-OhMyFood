@@ -237,6 +237,32 @@ h3 {
             margin: 0;
         }
     }
+    .restaurant-save {
+        width: 25px;
+        input[type="checkbox"] {
+            display: none;
+        }
+        input[type="checkbox"] + label, .heart-icon {
+            .heart-outlined {
+                display: block;
+            }
+            .heart-filled {
+                display: none;
+            }
+        }
+        input[type="checkbox"]:checked + label{
+            .heart-outlined {
+                display: none;
+            }
+            .heart-filled {
+                display: block;
+            }
+        }
+        #heart-checked-gradient {
+            --color-top-left: var(--primary-color);
+            --color-bot-right: var(--secondary-color);
+        }
+    }
 }
 
 
