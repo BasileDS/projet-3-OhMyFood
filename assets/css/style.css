@@ -1,4 +1,8 @@
 /********** Initialize main elements ***********/
+html {
+	scroll-behavior: smooth;
+}
+
 * {
     font-family: 'Roboto', sans-serif, Helvetica;
     color: #000000;
@@ -239,32 +243,42 @@ h3 {
     }
     .restaurant-save {
         width: 25px;
-        input[type="checkbox"] {
+        height: 25px;
+        input[type="checkbox"], .heart-checked {
             display: none;
         }
-        input[type="checkbox"] + label, .heart-icon {
-            .heart-outlined {
-                display: block;
-            }
-            .heart-filled {
+        input[type="checkbox"] + label, .heart-unchecked {
+            display: block;
+            cursor: pointer;
+        }
+        input[type="checkbox"]:checked + label {
+            .heart-unchecked {
                 display: none;
             }
-        }
-        input[type="checkbox"]:checked + label{
-            .heart-outlined {
-                display: none;
-            }
-            .heart-filled {
+            .heart-checked {
                 display: block;
+                #heart-checked-1 {
+                    fill: url(#Gradient1);
+                }
+                #heart-checked-2 {
+                    fill: url(#Gradient2);
+                }
+                #heart-checked-3 {
+                    fill: url(#Gradient3);
+                }
+                #heart-checked-4 {
+                    fill: url(#Gradient4);
+                }
+                .heart-gradient-top {
+                    stop-color: var(--primary-color);
+                }
+                .heart-gradient-bottom {
+                    stop-color: var(--secondary-color);
+                }
             }
-        }
-        #heart-checked-gradient {
-            --color-top-left: var(--primary-color);
-            --color-bot-right: var(--secondary-color);
         }
     }
 }
-
 
 /****** Footer style ******/
 .footer-container {
