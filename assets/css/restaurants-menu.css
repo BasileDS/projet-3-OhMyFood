@@ -95,7 +95,7 @@ h3, h4, h5, h6 {
 .dish-container {
     gap: 15px;
     width: 100%;
-    .dish-title {
+    & .dish-title {
         text-transform: uppercase;
         font-size: 1em;
         font-weight: 300;
@@ -127,7 +127,7 @@ h3, h4, h5, h6 {
     width: calc(100% - var(--global-padding-left-right));
     padding: 0 15px 0 15px;
     justify-content: space-between;
-    .menu-elements-title {
+    & .menu-elements-title {
         width: 85%;
         h3, p {
             white-space: nowrap;
