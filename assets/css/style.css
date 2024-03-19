@@ -14,21 +14,16 @@ html {
     --secondary-color: #FF79DA;
     --tertiary-color: #99E2D0;
     --tertiary-contrast-color: #008766;
-    --background-color: #F3F3F3;
+    --background-color: #F6F6F6;
     --light-contrast-color: #FFFFFF;
     --dark-contrast-color: #353535;
-    --section-padding-top-bottom: 60px;
-    --section-padding-left-right: 20px;
+    --global-padding-top-bottom: 60px;
+    --global-padding-left-right: 20px;
     --section-gap: 25px;
 }
 
 body {
     margin: 0;
-}
-
-section {
-    padding: var(--section-padding-top-bottom)
-             var(--section-padding-left-right);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -65,6 +60,18 @@ h3 {
     display: flex;
     justify-content: left;
     align-items: center;
+}
+
+.flex-right-center {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.flex-center-end {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 .flex-center-center-col {
@@ -108,10 +115,11 @@ h3 {
     color: #FFFFFF;
     background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
     box-shadow: 0px 4px 10px 0px #00000040;
+    transition: 250ms ease-in;
 }
 
 .gradient-button:hover {
-    filter: brightness(110%) contrast(90%);
+    filter: brightness(115%) contrast(85%);
     box-shadow: 0px 4px 15px 0px #00000040;
 }
 
@@ -123,166 +131,9 @@ h3 {
     color: #7E7E7E;
 }
 
-/****** Homepage Header style ******/
-.homepage-header {
-    position: sticky;
-    z-index: 99;
-    background-color: #FFFFFF;
-    box-shadow: 0px 4px 4px 0px #00000040;
-    & .header-title {
-        width: 100%;
-        height: 63px;
-        z-index: 1;
-        box-shadow: 0px 2px 4px 0px #00000026;
-        h1 {
-            padding-top: 10px;
-            margin: 0;
-            font-family: Shrikhand;
-        }
-    }
-    .header-location {
-        width: 100%;
-        background-color: #EAEAEA;
-        gap: 20px;
-        p {
-            font-weight: 500;
-            font-size: 1em;
-        }
-    }
-}
-
-/****** Call to action section style ******/
-.homepage-call-to-action {
-    gap: var(--section-gap);
-    padding: 2.5em 2em;
-    & .call-to-action-txt {
-        text-align: center;
-        gap: 15px;
-        h2 {
-            padding: 0 25px;
-            margin: 0;
-        }
-        p {
-            font-size: 1.1em;
-            margin: 0;
-        }
-    }
-}
-
-/****** Process presentation style ******/
-.process-presentation {
-    gap: var(--section-gap);
-    & .process-steps {
-        width: calc(100% - 20px);
-        height: 72px;
-        margin-left: 15px;
-        border-radius: 20px;
-        box-shadow: 0px 4px 15px 0px #00000026;
-        .process-step-number {
-            width: 25px;
-            height: 25px;
-            margin-left: -15px;;
-            font-size: 0.87em;
-            font-weight: 500;
-            color: #FFFFFF;
-            border-radius: 25px;
-            background-color: var(--primary-color);
-        }
-        i {
-            padding: 0 15px 0 25px;
-            font-size: 1.1em;
-        }
-        p {
-            font-size: 1em;
-            font-weight: 500;
-        }
-    }
-}
-/****** restaurants list style  ******/
-.restaurants-list {
-    gap: var(--section-gap);
-}
-
-/*** Restaurant cards style ***/
-.restaurant-cards {
-    width: 100%;
-    overflow: hidden;
-    text-decoration: none;
-    border-radius: 15px;
-    box-shadow: 0px 4px 15px 0px #0000001A;
-    align-items: initial;
-    & .restaurant-cards-container {
-        display: flex;
-        flex-direction: column;
-    }
-    .cards-img {        
-        width: 100%;
-        height: 165px;
-    }
-    .restaurant-badge {
-        position: absolute;
-        height: 29px;
-        width: 80px;
-        margin-top: 13px;
-        font-size: 0.85em;
-        font-weight: 500;
-        right: calc( 13px + var(--section-padding-left-right));
-        border-radius: 2px;
-        color: var(--tertiary-contrast-color);
-        background-color: var(--tertiary-color);
-    }
-    .restaurant-infos {
-        justify-content: space-between;
-        padding: 15px 15px;
-    }
-    .restaurant-txt {
-        line-height: 1.35;
-        p {
-            margin: 0;
-        }
-    }
-    .restaurant-save {
-        width: 25px;
-        height: 25px;
-        input[type="checkbox"], .heart-checked {
-            display: none;
-        }
-        input[type="checkbox"] + label, .heart-unchecked {
-            display: block;
-            cursor: pointer;
-        }
-        input[type="checkbox"]:checked + label {
-            .heart-unchecked {
-                display: none;
-            }
-            .heart-checked {
-                display: block;
-                #heart-checked-1 {
-                    fill: url(#Gradient1);
-                }
-                #heart-checked-2 {
-                    fill: url(#Gradient2);
-                }
-                #heart-checked-3 {
-                    fill: url(#Gradient3);
-                }
-                #heart-checked-4 {
-                    fill: url(#Gradient4);
-                }
-                .heart-gradient-top {
-                    stop-color: var(--primary-color);
-                }
-                .heart-gradient-bottom {
-                    stop-color: var(--secondary-color);
-                }
-            }
-        }
-    }
-}
-
 /****** Footer style ******/
 .footer-container {
-    padding: var(--section-padding-left-right);
+    padding: var(--global-padding-left-right);
     background-color: var(--dark-contrast-color);
     h4, li, i, a {
         color: #FFFFFF;

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Oh My Food</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&family=Shrikhand&display=swap">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link rel="stylesheet" href="/assets/css/style.css">
+        <link rel="stylesheet" href="/assets/css/restaurants-menu.css">
+    </head>
+    <body>
+        <header class="restaurant-header flex-center-center">
+            <a href="/index.html" class="back-to-homepage-arrow"><i class="fa-solid fa-arrow-left"></i></a>
+            <h1>ohmyfood</h1>
+        </header>
+        <main class="restaurant-main-container flex-center-center-col">
+            <img class="restaurant-featured-image img-cover-center" src="/assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Plates and bread bucket on a restaurant table">
+            <div class="restaurants-menu-container flex-center-start-col">
+                <div class="menu-title flex-center-center">
+                    <h1>La palette du goût</h2>
+                    <div class="menu-save">
+                        <input type="checkbox" id="heart-save"/>
+                        <label for="heart-save">
+                            <svg class="heart-unchecked" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                                <path d="M133.7,211.9l81-81c19.9-20,22.8-52.7,4-73.6a52,52,0,0,0-75.5-2.1L128,70.5,114.9,57.3c-20-19.9-52.7-22.8-73.6-4a52,52,0,0,0-2.1,75.5l83.1,83.1A8.1,8.1,0,0,0,133.7,211.9Z"
+                                fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+                            </svg>
+                            <svg class="heart-checked" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                                <defs>
+                                    <linearGradient id="lapalettedugout-save">
+                                      <stop class="heart-gradient-top" offset="0%" />
+                                      <stop class="heart-gradient-bottom" offset="100%" />
+                                    </linearGradient>
+                                </defs>
+                                <path id="heart-checked-1" class="heart-checked" fill="url(#lapalettedugout-save)" d="M133.7,211.9l81-81c19.9-20,22.8-52.7,4-73.6a52,52,0,0,0-75.5-2.1L128,70.5,114.9,57.3c-20-19.9-52.7-22.8-73.6-4a52,52,0,0,0-2.1,75.5l83.1,83.1A8.1,8.1,0,0,0,133.7,211.9Z"/>
+                            </svg> 
+                        </label>
+                    </div>
+                </div>
+                <section class="dish-container flex-center-start-col">
+                    <h2 class="dish-title">Entrées</h2>
+                    <article class="menu-elements-container flex-center-center">
+                        <input type="checkbox" class="save-icon-checkbox" id="first-dishe-1"/>
+                        <label for="first-dishe-1" class="flex-left-center">
+                            <div class="menu-elements flex-center-center">
+                                <div class="menu-elements-title">
+                                    <h3>Fricassée d'escargots</h3>
+                                    <p>Au piment d'Espelette</p>
+                                </div>
+                                <span class="menu-element-price">25€</span>
+                            </div>
+                            <div class="save-icon-container flex-center-center"><i class="fa-solid fa-circle-check"></i></div>
+                        </label>
+                    </article>
+                    <article class="menu-elements-container flex-center-center">
+                        <input type="checkbox" class="save-icon-checkbox" id="first-dishe-2"/>
+                        <label for="first-dishe-2" class="flex-left-center">
+                            <div class="menu-elements flex-center-center">
+                                <div class="menu-elements-title">
+                                    <h3>Foie gras de canard mi-cuit</h3>
+                                    <p>Et ses copeaux de truffe noire</p>
+                                </div>
+                                <span class="menu-element-price">35€</span>
+                            </div>
+                            <div class="save-icon-container flex-center-center"><i class="fa-solid fa-circle-check"></i></div>
+                        </label>
+                    </article>
+                    <article class="menu-elements-container flex-center-center">
+                        <input type="checkbox" class="save-icon-checkbox" id="first-dishe-3"/>
+                        <label for="first-dishe-3" class="flex-left-center">
+                            <div class="menu-elements flex-center-center">
+                                <div class="menu-elements-title">
+                                    <h3>Œuf au plat</h3>
+                                    <p>Assaisonné à la truffe sur lit de caviar</p>
+                                </div>
+                                <span class="menu-element-price">20€</span>
+                            </div>
+                            <div class="save-icon-container flex-center-center"><i class="fa-solid fa-circle-check"></i></div>
+                        </label>
+                    </article>
+                </section>
+                <section class="dish-container flex-center-start-col">
+                    <h2 class="dish-title">Plats</h2>
+                    <article class="menu-elements-container flex-center-center">
+                        <input type="checkbox" class="save-icon-checkbox" id="main-dishe-1"/>
+                        <label for="main-dishe-1" class="flex-left-center">
+                            <div class="menu-elements flex-center-center">
+                                <div class="menu-elements-title">
+                                    <h3>Filet de bœuf aux herbes</h3>
+                                    <p>Accompagné de sa ribambelle de légumes</p>
+                                </div>
+                                <span class="menu-element-price">40€</span>
+                            </div>
+                            <div class="save-icon-container flex-center-center"><i class="fa-solid fa-circle-check"></i></div>
+                        </label>
+                    </article>
+                    <article class="menu-elements-container flex-center-center">
+                        <input type="checkbox" class="save-icon-checkbox" id="main-dishe-2"/>
+                        <label for="main-dishe-2" class="flex-left-center">
+                            <div class="menu-elements flex-center-center">
+                                <div class="menu-elements-title">
+                                    <h3>Parmentier de queue de bœuf</h3>
+                                    <p>À la truffe noire sur sa purée de panais</p>
+                                </div>
+                                <span class="menu-element-price">35€</span>
+                            </div>
+                            <div class="save-icon-container flex-center-center"><i class="fa-solid fa-circle-check"></i></div>
+                        </label>
+                    </article>
+                    <article class="menu-elements-container flex-center-center">
+                        <input type="checkbox" class="save-icon-checkbox" id="main-dishe-3"/>
+                        <label for="main-dishe-3" class="flex-left-center">
+                            <div class="menu-elements flex-center-center">
+                                <div class="menu-elements-title">
+                                    <h3>Filet de turbot</h3>
+                                    <p>Aux agrumes</p>
+                                </div>
+                                <span class="menu-element-price">44€</span>
+                            </div>
+                            <div class="save-icon-container flex-center-center"><i class="fa-solid fa-circle-check"></i></div>
+                        </label>
+                    </article>
+                </section>
+                <section class="dish-container flex-center-start-col">
+                    <h2 class="dish-title">Desserts</h2>
+                    <article class="menu-elements-container flex-center-center">
+                        <input type="checkbox" class="save-icon-checkbox" id="dessert-dishe-1"/>
+                        <label for="dessert-dishe-1" class="flex-left-center">
+                            <div class="menu-elements flex-center-center">
+                                <div class="menu-elements-title">
+                                    <h3>Paris-Brest</h3>
+                                    <p>Revisité</p>
+                                </div>
+                                <span class="menu-element-price">18€</span>
+                            </div>
+                            <div class="save-icon-container flex-center-center"><i class="fa-solid fa-circle-check"></i></div>
+                        </label>
+                    </article>
+                    <article class="menu-elements-container flex-center-center">
+                        <input type="checkbox" class="save-icon-checkbox" id="dessert-dishe-2"/>
+                        <label for="dessert-dishe-2" class="flex-left-center">
+                            <div class="menu-elements flex-center-center">
+                                <div class="menu-elements-title">
+                                    <h3>Macaron au chocolat d'exception </h3>
+                                    <p>Et glace à la vanille de Madagascar</p>
+                                </div>
+                                <span class="menu-element-price">22€</span>
+                            </div>
+                            <div class="save-icon-container flex-center-center"><i class="fa-solid fa-circle-check"></i></div>
+                        </label>
+                    </article>
+                    <article class="menu-elements-container flex-center-center">
+                        <input type="checkbox" class="save-icon-checkbox" id="dessert-dishe-3"/>
+                        <label for="dessert-dishe-3" class="flex-left-center">
+                            <div class="menu-elements flex-center-center">
+                                <div class="menu-elements-title">
+                                    <h3>Mousse au chocolat</h3>
+                                    <p>Au piment d'Espelette et à la truffe noire</p>
+                                </div>
+                                <span class="menu-element-price">23€</span>
+                            </div>
+                            <div class="save-icon-container flex-center-center"><i class="fa-solid fa-circle-check"></i></div>
+                        </label>
+                    </article>
+                </section>
+                <button class="gradient-button">Commander</button>
+            </div>
+        </main>
+        <footer class="footer-container">
+            <h4>ohmyfood</h4>
+            <ul class="flex-center-start-col">
+                <li><a href="#" class="flex-left-center"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a></li>
+                <li><a href="#" class="flex-left-center"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a></li>
+                <li><a href="#">Mentions légales</a></li>
+                <li><a href="mailto:basile.d.santos@gmail.com">Contact</a></li>
+            </ul>
+        </footer>
+    </body>
+</html>
