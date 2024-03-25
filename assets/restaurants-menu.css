@@ -22,14 +22,16 @@ h3, h4, h5, h6 {
     background-color: #FFFFFF;
     width: 100%;
     height: 63px;
-    h1 {
-        padding-top: 10px;
-    }
-    .back-to-homepage-arrow {
-        font-size: 1.2em;
-        position: absolute;
-        left: 20px;
-    }
+}
+
+.restaurant-header h1 {
+    padding-top: 10px;
+}
+
+.restaurant-header .back-to-homepage-arrow {
+    font-size: 1.2em;
+    position: absolute;
+    left: 20px;
 }
 
 /****** Menu container header style ******/
@@ -57,51 +59,59 @@ h3, h4, h5, h6 {
     width: 25px;
     height: 25px;
     margin-right: 10px;
-    input[type="checkbox"], .heart-checked {
-        display: none;
-    }
-    input[type="checkbox"] + label, .heart-unchecked {
-        display: block;
-        cursor: pointer;
-    }
-    input[type="checkbox"] + label:hover {
-        scale: 1.1;
-    }
-    input[type="checkbox"]:checked + label {
-        .heart-unchecked {
-            display: none;
-        }
-        .heart-checked {
-            display: block;
-            #heart-save {
-                fill: url(#lapalettedugout-save);
-            }
-            .heart-gradient-top {
-                stop-color: var(--primary-color);
-            }
-            .heart-gradient-bottom {
-                stop-color: var(--secondary-color);
-            }
-        }
-    }
+}
+
+.menu-save input[type="checkbox"], .heart-checked {
+    display: none;
+}
+
+.menu-save input[type="checkbox"] + label, .heart-unchecked {
+    display: block;
+    cursor: pointer;
+}
+
+.menu-save input[type="checkbox"] + label:hover {
+    transform: scale(1.1);
+}
+
+.menu-save input[type="checkbox"]:checked + label .heart-unchecked {
+    display: none;
+}
+
+.menu-save input[type="checkbox"]:checked + label .heart-checked {
+    display: block;
+}
+
+.menu-save input[type="checkbox"]:checked + label .heart-checked #heart-save {
+    fill: url(#lapalettedugout-save);
+}
+
+.menu-save input[type="checkbox"]:checked + label .heart-checked .heart-gradient-top {
+    stop-color: var(--primary-color);
+}
+
+.menu-save input[type="checkbox"]:checked + label .heart-checked .heart-gradient-bottom {
+    stop-color: var(--secondary-color);
 }
 
 /**** Restaurant Dishes & desserts title style ****/
 .dish-container {
     gap: 15px;
     width: 100%;
-    & .dish-title {
-        text-transform: uppercase;
-        font-size: 1em;
-        font-weight: 300;
-    }
-    .dish-title::after {
-        content: " ";
-        display: block;
-        width: 40px;
-        margin-top: 5px;
-        border-bottom: 2px solid var(--tertiary-color);
-    }
+}
+
+.dish-container .dish-title {
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 300;
+}
+
+.dish-container .dish-title::after {
+    content: " ";
+    display: block;
+    width: 40px;
+    margin-top: 5px;
+    border-bottom: 2px solid var(--tertiary-color);
 }
 
 /**** Menu elements style ****/
@@ -118,48 +128,47 @@ h3, h4, h5, h6 {
     box-shadow: 0px 4px 15px 0px #0000001A;
 }
 
-
-
-
-
-
 .menu-elements {
     width: calc(100% - var(--global-padding-left-right));
     padding: 0 15px 0 15px;
     justify-content: space-between;
-    & .menu-elements-title {
-        display: block;
-        width: 80%;
-        overflow: hidden;
-        h3, p {
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-        h3 {
-            font-size: 1em;
-            line-height: 1.5em;
-        }
-        p {
-            font-size: 0.85em;
-        }
-    }
-    .menu-element-price {
-        align-self: flex-end;
-        margin-right: 15px;
-        margin-bottom: 15px;
-        font-size: 0.9em; 
-        font-weight: 700;
-    }
+}
+
+.menu-elements .menu-elements-title {
+    width: 85%;
+}
+
+.menu-elements .menu-elements-title h3, .menu-elements .menu-elements-title p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.menu-elements .menu-elements-title h3 {
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+.menu-elements .menu-elements-title p {
+    font-size: 0.85em;
+}
+
+.menu-element-price {
+    align-self: flex-end;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    font-size: 0.9em; 
+    font-weight: 700;
 }
 
 .save-icon-container {
     width: 80px;
     margin-right: -80px;
     background-color: var(--tertiary-color);
-    i {
-        color: #FFFFFF;
-    }
+}
+
+.save-icon-container i {
+    color: #FFFFFF;
 }
 
 .menu-elements, .save-icon-container {
@@ -167,31 +176,34 @@ h3, h4, h5, h6 {
     transition-duration: 230ms;
 }
 
-.menu-elements-container {
-    input[type="checkbox"] + label {
-        position: absolute;
-        width: calc(100% - 2*var(--global-padding-left-right));
-        margin-left: -15px;
-        overflow: hidden;
-        cursor: pointer;
-        border-radius: 15px;
-    }
-    input[type="checkbox"]:checked + label {
-        .save-icon-container {
-            margin-right: 0px;
-        }
-    }
-    input[type="checkbox"]:not(:checked) + label {
-        .save-icon-container {
-            margin-right: -80px;
-        }
-    }
-    .save-icon-checkbox {
-        display: none;
-    }
-    .save-icon-container {
-        font-size: 1.1em;
-    }
+
+.menu-elements-container input[type="checkbox"] + label {
+    position: absolute;
+    width: calc(100% - 2*var(--global-padding-left-right));
+    margin-left: -15px;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.menu-elements-container input[type="checkbox"]:checked + label .save-icon-container {
+    margin-right: 0px;
+}
+
+.menu-elements-container input[type="checkbox"]:checked + label .menu-elements {
+    width: calc(100% - 69px);
+}
+
+.menu-elements-container input[type="checkbox"]:not(:checked) + label .save-icon-container {
+    margin-right: -80px;
+}
+
+.menu-elements-container .save-icon-checkbox {
+    display: none;
+}
+
+.menu-elements-container .save-icon-container {
+    font-size: 1.1em;
 }
 
 /****** Load & dish elemens hover animation ******/
@@ -226,7 +238,8 @@ input[type="checkbox"]:not(:checked) + label:hover .save-icon-container {
     opacity: 0.35;
 }
 
-/*input[type="checkbox"]:checked + label:hover .save-icon-container {
+/****** Display cross and red background on hover
+input[type="checkbox"]:checked + label:hover .save-icon-container {
     margin-right: 0px;
     background-color: rgb(255, 157, 157);
     opacity: 0.5;
@@ -270,14 +283,13 @@ input[type="checkbox"]:not(:checked) + label:hover .save-icon-container {
 
     .menu-elements-container {
         width: 634px;
-        input[type="checkbox"] + label {
-            max-width: 634px;
-        }
     }
 
-    .dish-container {
-        & .dish-title {
-            width: 634px;
-        }
+    .menu-elements-container input[type="checkbox"] + label {
+        max-width: 634px;
+    }
+
+    .dish-container .dish-title {
+        width: 634px;
     }
 }

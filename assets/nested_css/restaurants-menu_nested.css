@@ -118,19 +118,12 @@ h3, h4, h5, h6 {
     box-shadow: 0px 4px 15px 0px #0000001A;
 }
 
-
-
-
-
-
 .menu-elements {
     width: calc(100% - var(--global-padding-left-right));
     padding: 0 15px 0 15px;
     justify-content: space-between;
     & .menu-elements-title {
-        display: block;
-        width: 80%;
-        overflow: hidden;
+        width: 85%;
         h3, p {
             white-space: nowrap;
             overflow: hidden;
@@ -146,7 +139,7 @@ h3, h4, h5, h6 {
     }
     .menu-element-price {
         align-self: flex-end;
-        margin-right: 15px;
+        margin-right: 20px;
         margin-bottom: 15px;
         font-size: 0.9em; 
         font-weight: 700;
@@ -179,6 +172,9 @@ h3, h4, h5, h6 {
     input[type="checkbox"]:checked + label {
         .save-icon-container {
             margin-right: 0px;
+        }
+        .menu-elements {
+            width: calc(100% - 69px);
         }
     }
     input[type="checkbox"]:not(:checked) + label {
