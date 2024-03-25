@@ -28,154 +28,158 @@
                 </div>
                 <a href="#restaurants" class="gradient-button">Explorer nos restaurants</a>
             </section>
-            <section class="process-presentation flex-center-start-col">
-                <h2>Fonctionnement</h2>
-                <div class="process-steps flex-left-center homepage-contrast-background">
-                    <span class="process-step-number flex-center-center">1</span>
-                    <i class="grey-icon flex-center-center fa-solid fa-mobile-screen-button"></i>
-                    <p>Choisissez un restaurant</p>                    
-                </div>
-                <div class="process-steps flex-left-center homepage-contrast-background">
-                    <span class="process-step-number flex-center-center">2</span>
-                    <i class="grey-icon flex-center-center fa-solid fa-list-ul"></i>
-                    <p>Composez votre menu</p>                    
-                </div>
-                <div class="process-steps flex-left-center homepage-contrast-background">
-                    <span class="process-step-number flex-center-center">3</span>
-                    <i class="purple-icon flex-center-center fa-solid fa-store"></i>
-                    <p>Dégustez au restaurant</p>                    
+            <section class="process-presentation-container flex-center-center">
+                <div class="process-presentation flex-center-start-col">
+                    <h2>Fonctionnement</h2>
+                    <div class="process-steps flex-center-center-col">
+                        <div class="process-step flex-left-center homepage-contrast-background">
+                            <span class="process-step-number flex-center-center">1</span>
+                            <i class="grey-icon flex-center-center fa-solid fa-mobile-screen-button"></i>
+                            <p>Choisissez un restaurant</p>                    
+                        </div>
+                        <div class="process-step flex-left-center homepage-contrast-background">
+                            <span class="process-step-number flex-center-center">2</span>
+                            <i class="grey-icon flex-center-center fa-solid fa-list-ul"></i>
+                            <p>Composez votre menu</p>                    
+                        </div>
+                        <div class="process-step flex-left-center homepage-contrast-background">
+                            <span class="process-step-number flex-center-center">3</span>
+                            <i class="purple-icon flex-center-center fa-solid fa-store"></i>
+                            <p>Dégustez au restaurant</p>                    
+                        </div>
+                    </div>
                 </div>
             </section>
-            <section class="restaurants-list homepage-contrast-background flex-center-start-col" id="restaurants">
-                <h2>Restaurants</h2>
-                <a href="./restaurants/lapalettedugout.html" class="restaurant-cards">
-                    <article class="restaurant-cards-container">
-                        <div class="restaurant-badge flex-center-center">Nouveau</div>
-                        <img src="./assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-                             class="cards-img img-cover-bottom"
-                             alt="Plates and bread bucket on a restaurant table">
-                        <div class="restaurant-infos flex-center-center">
-                            <div class="restaurant-txt">
-                                <h3>La palette du goût</h3>
-                                <p>Ménilmontant</p>
+            <section class="homepage-contrast-background flex-center-center" id="restaurants">
+                <div class="restaurants-list flex-center-start-col">
+                    <h2>Restaurants</h2>
+                    <div class="restaurant-cards flex-center-center-col">
+                        <article class="restaurant-card">
+                            <a href="./restaurants/lapalettedugout.html" class="restaurant-card-link"></a>
+                            <div class="restaurant-badge flex-center-center">Nouveau</div>
+                            <img src="./assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                                    class="cards-img img-cover-center"
+                                    alt="Plates and bread bucket on a restaurant table">
+                            <div class="restaurant-infos flex-center-center">
+                                <div class="restaurant-txt">
+                                    <h3>La palette du goût</h3>
+                                    <p>Ménilmontant</p>
+                                </div>
+                                <div class="restaurant-save">
+                                    <input type="checkbox" id="heart-1st-restaurant">
+                                    <label for="heart-1st-restaurant">
+                                        <svg class="heart-unchecked" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                                            <path d="M133.7,211.9l81-81c19.9-20,22.8-52.7,4-73.6a52,52,0,0,0-75.5-2.1L128,70.5,114.9,57.3c-20-19.9-52.7-22.8-73.6-4a52,52,0,0,0-2.1,75.5l83.1,83.1A8.1,8.1,0,0,0,133.7,211.9Z"
+                                            fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+                                        </svg>
+                                        <svg class="heart-checked" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                                            <defs>
+                                                <linearGradient id="Gradient1">
+                                                    <stop class="heart-gradient-top" offset="0%" />
+                                                    <stop class="heart-gradient-bottom" offset="100%" />
+                                                </linearGradient>
+                                            </defs>
+                                            <path id="heart-checked-1" class="heart-checked" fill="url(#Gradient1)" d="M133.7,211.9l81-81c19.9-20,22.8-52.7,4-73.6a52,52,0,0,0-75.5-2.1L128,70.5,114.9,57.3c-20-19.9-52.7-22.8-73.6-4a52,52,0,0,0-2.1,75.5l83.1,83.1A8.1,8.1,0,0,0,133.7,211.9Z"/>
+                                        </svg> 
+                                    </label>
+                                </div>
                             </div>
-                            <div class="restaurant-save">
-                                <input type="checkbox" id="heart-1st-restaurant">
-                                <label for="heart-1st-restaurant">
-                                    <svg class="heart-unchecked" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
-                                        <path d="M133.7,211.9l81-81c19.9-20,22.8-52.7,4-73.6a52,52,0,0,0-75.5-2.1L128,70.5,114.9,57.3c-20-19.9-52.7-22.8-73.6-4a52,52,0,0,0-2.1,75.5l83.1,83.1A8.1,8.1,0,0,0,133.7,211.9Z"
-                                        fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
-                                    </svg>
-                                    <svg class="heart-checked" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
-                                        <defs>
-                                            <linearGradient id="Gradient1">
-                                              <stop class="heart-gradient-top" offset="0%" />
-                                              <stop class="heart-gradient-bottom" offset="100%" />
-                                            </linearGradient>
-                                        </defs>
-                                        <path id="heart-checked-1" class="heart-checked" fill="url(#Gradient1)" d="M133.7,211.9l81-81c19.9-20,22.8-52.7,4-73.6a52,52,0,0,0-75.5-2.1L128,70.5,114.9,57.3c-20-19.9-52.7-22.8-73.6-4a52,52,0,0,0-2.1,75.5l83.1,83.1A8.1,8.1,0,0,0,133.7,211.9Z"/>
-                                    </svg> 
-                                </label>
+                        </article>
+                        <article class="restaurant-card">
+                            <a href="./restaurants/lanotenechantee.html" class="restaurant-card-link"></a>
+                            <div class="restaurant-badge flex-center-center">Nouveau</div>
+                            <img src="./assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+                                    class="cards-img img-cover-center"
+                                    alt="Plate and restaurant menu on a restaurant table">
+                            <div class="restaurant-infos flex-center-center">
+                                <div class="restaurant-txt">
+                                    <h3>La note enchantée</h3>
+                                    <p>Charonne</p>
+                                </div>
+                                <div class="restaurant-save">
+                                    <input type="checkbox" id="heart-2nd-restaurant">
+                                    <label for="heart-2nd-restaurant">
+                                        <svg class="heart-unchecked" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                                            <path d="M133.7,211.9l81-81c19.9-20,22.8-52.7,4-73.6a52,52,0,0,0-75.5-2.1L128,70.5,114.9,57.3c-20-19.9-52.7-22.8-73.6-4a52,52,0,0,0-2.1,75.5l83.1,83.1A8.1,8.1,0,0,0,133.7,211.9Z"
+                                            fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+                                        </svg>
+                                        <svg class="heart-checked" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                                            <defs>
+                                                <linearGradient id="Gradient2">
+                                                    <stop class="heart-gradient-top" offset="0%" />
+                                                    <stop class="heart-gradient-bottom" offset="100%" />
+                                                </linearGradient>
+                                            </defs>
+                                            <path id="heart-checked-2" class="heart-checked" fill="url(#Gradient2)" d="M133.7,211.9l81-81c19.9-20,22.8-52.7,4-73.6a52,52,0,0,0-75.5-2.1L128,70.5,114.9,57.3c-20-19.9-52.7-22.8-73.6-4a52,52,0,0,0-2.1,75.5l83.1,83.1A8.1,8.1,0,0,0,133.7,211.9Z"/>
+                                        </svg>
+                                    </label>
+                                </div>
                             </div>
-                        </div>
-                    </article>
-                </a>
-                <a href="./restaurants/lanotenechantee.html" class="restaurant-cards">
-                    <article class="restaurant-cards-container">
-                        <div class="restaurant-badge flex-center-center">Nouveau</div>
-                        <img src="./assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
-                             class="cards-img img-cover-center"
-                             alt="Plate and restaurant menu on a restaurant table">
-                        <div class="restaurant-infos flex-center-center">
-                            <div class="restaurant-txt">
-                                <h3>La note enchantée</h3>
-                                <p>Charonne</p>
+                        </article>
+                        <article class="restaurant-card">
+                            <a href="./restaurants/alafrancaise.html" class="restaurant-card-link"></a>
+                            <div class="none restaurant-badge flex-center-center">Nouveau</div>
+                            <img src="./assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                                    class="cards-img img-cover-center"
+                                    alt="Eggs on bread on a restaurant table">
+                            <div class="restaurant-infos flex-center-center">
+                                <div class="restaurant-txt">
+                                    <h3>À la française</h3>
+                                    <p>Cité Rouge</p>
+                                </div>
+                                <div class="restaurant-save">
+                                    <input type="checkbox" id="heart-3rd-restaurant">
+                                    <label for="heart-3rd-restaurant">
+                                        <svg class="heart-unchecked" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                                            <path d="M133.7,211.9l81-81c19.9-20,22.8-52.7,4-73.6a52,52,0,0,0-75.5-2.1L128,70.5,114.9,57.3c-20-19.9-52.7-22.8-73.6-4a52,52,0,0,0-2.1,75.5l83.1,83.1A8.1,8.1,0,0,0,133.7,211.9Z"
+                                            fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+                                        </svg>
+                                        <svg class="heart-checked" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                                            <defs>
+                                                <linearGradient id="Gradient3">
+                                                <stop class="heart-gradient-top" offset="0%" />
+                                                <stop class="heart-gradient-bottom" offset="100%" />
+                                                </linearGradient>
+                                            </defs>
+                                            <path id="heart-checked-3" class="heart-checked" fill="url(#Gradient3)" d="M133.7,211.9l81-81c19.9-20,22.8-52.7,4-73.6a52,52,0,0,0-75.5-2.1L128,70.5,114.9,57.3c-20-19.9-52.7-22.8-73.6-4a52,52,0,0,0-2.1,75.5l83.1,83.1A8.1,8.1,0,0,0,133.7,211.9Z"/>
+                                        </svg>
+                                    </label>
+                                </div>
                             </div>
-                            <div class="restaurant-save">
-                                <input type="checkbox" id="heart-2nd-restaurant">
-                                <label for="heart-2nd-restaurant">
-                                    <svg class="heart-unchecked" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
-                                        <path d="M133.7,211.9l81-81c19.9-20,22.8-52.7,4-73.6a52,52,0,0,0-75.5-2.1L128,70.5,114.9,57.3c-20-19.9-52.7-22.8-73.6-4a52,52,0,0,0-2.1,75.5l83.1,83.1A8.1,8.1,0,0,0,133.7,211.9Z"
-                                        fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
-                                    </svg>
-                                    <svg class="heart-checked" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
-                                        <defs>
-                                            <linearGradient id="Gradient2">
-                                              <stop class="heart-gradient-top" offset="0%" />
-                                              <stop class="heart-gradient-bottom" offset="100%" />
-                                            </linearGradient>
-                                        </defs>
-                                        <path id="heart-checked-2" class="heart-checked" fill="url(#Gradient2)" d="M133.7,211.9l81-81c19.9-20,22.8-52.7,4-73.6a52,52,0,0,0-75.5-2.1L128,70.5,114.9,57.3c-20-19.9-52.7-22.8-73.6-4a52,52,0,0,0-2.1,75.5l83.1,83.1A8.1,8.1,0,0,0,133.7,211.9Z"/>
-                                    </svg>
-                                </label>
+                        </article>
+                        <article class="restaurant-card">
+                            <a href="./restaurants/ledelicedessens.html" class="restaurant-card-link"></a>
+                            <div class="none restaurant-badge flex-center-center">Nouveau</div>
+                            <img src="./assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                                    class="cards-img img-cover-center"
+                                    alt="Restaurant plates filled woth fish and other ingredients">
+                            <div class="restaurant-infos flex-center-center">
+                                <div class="restaurant-txt">
+                                    <h3>Le délice des sens</h3>
+                                    <p>Folie-Méricourt</p>
+                                </div>
+                                <div class="restaurant-save">
+                                    <input type="checkbox" id="heart-4th-restaurant">
+                                    <label for="heart-4th-restaurant">
+                                        <svg class="heart-unchecked" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                                            <path d="M133.7,211.9l81-81c19.9-20,22.8-52.7,4-73.6a52,52,0,0,0-75.5-2.1L128,70.5,114.9,57.3c-20-19.9-52.7-22.8-73.6-4a52,52,0,0,0-2.1,75.5l83.1,83.1A8.1,8.1,0,0,0,133.7,211.9Z"
+                                            fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+                                        </svg>
+                                        <svg class="heart-checked" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                                            <defs>
+                                                <linearGradient id="Gradient4">
+                                                <stop class="heart-gradient-top" offset="0%" />
+                                                <stop class="heart-gradient-bottom" offset="100%" />
+                                                </linearGradient>
+                                            </defs>
+                                            <path id="heart-checked-4" class="heart-checked" fill="url(#Gradient4)" d="M133.7,211.9l81-81c19.9-20,22.8-52.7,4-73.6a52,52,0,0,0-75.5-2.1L128,70.5,114.9,57.3c-20-19.9-52.7-22.8-73.6-4a52,52,0,0,0-2.1,75.5l83.1,83.1A8.1,8.1,0,0,0,133.7,211.9Z"/>
+                                        </svg>
+                                    </label>
+                                </div>
                             </div>
-                        </div>
-                    </article>
-                </a>
-                <a href="./restaurants/alafrancaise.html" class="restaurant-cards">
-                    <article class="restaurant-cards-container">
-                        <div class="none restaurant-badge flex-center-center">Nouveau</div>
-                        <img src="./assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-                             class="cards-img img-cover-bottom"
-                             alt="Eggs on bread on a restaurant table">
-                        <div class="restaurant-infos flex-center-center">
-                            <div class="restaurant-txt">
-                                <h3>À la française</h3>
-                                <p>Cité Rouge</p>
-                            </div>
-                            <div class="restaurant-save">
-                                <input type="checkbox" id="heart-3rd-restaurant">
-                                <label for="heart-3rd-restaurant">
-                                    <svg class="heart-unchecked" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
-                                        <path d="M133.7,211.9l81-81c19.9-20,22.8-52.7,4-73.6a52,52,0,0,0-75.5-2.1L128,70.5,114.9,57.3c-20-19.9-52.7-22.8-73.6-4a52,52,0,0,0-2.1,75.5l83.1,83.1A8.1,8.1,0,0,0,133.7,211.9Z"
-                                        fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
-                                    </svg>
-                                    <svg class="heart-checked" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
-                                        <defs>
-                                            <linearGradient id="Gradient3">
-                                            <stop class="heart-gradient-top" offset="0%" />
-                                            <stop class="heart-gradient-bottom" offset="100%" />
-                                            </linearGradient>
-                                        </defs>
-                                        <path id="heart-checked-3" class="heart-checked" fill="url(#Gradient3)" d="M133.7,211.9l81-81c19.9-20,22.8-52.7,4-73.6a52,52,0,0,0-75.5-2.1L128,70.5,114.9,57.3c-20-19.9-52.7-22.8-73.6-4a52,52,0,0,0-2.1,75.5l83.1,83.1A8.1,8.1,0,0,0,133.7,211.9Z"/>
-                                    </svg>
-                                </label>
-                            </div>
-                        </div>
-                    </article>
-                </a>
-                <a href="./restaurants/ledelicedessens.html" class="restaurant-cards">
-                    <article class="restaurant-cards-container">
-                        <div class="none restaurant-badge flex-center-center">Nouveau</div>
-                        <img src="./assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-                             class="cards-img img-cover-bottom"
-                             alt="Restaurant plates filled woth fish and other ingredients">
-                        <div class="restaurant-infos flex-center-center">
-                            <div class="restaurant-txt">
-                                <h3>Le délice des sens</h3>
-                                <p>Folie-Méricourt</p>
-                            </div>
-                            <div class="restaurant-save">
-                                <input type="checkbox" id="heart-4th-restaurant">
-                                <label for="heart-4th-restaurant">
-                                    <svg class="heart-unchecked" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
-                                        <path d="M133.7,211.9l81-81c19.9-20,22.8-52.7,4-73.6a52,52,0,0,0-75.5-2.1L128,70.5,114.9,57.3c-20-19.9-52.7-22.8-73.6-4a52,52,0,0,0-2.1,75.5l83.1,83.1A8.1,8.1,0,0,0,133.7,211.9Z"
-                                        fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
-                                    </svg>
-                                    <svg class="heart-checked" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
-                                        <defs>
-                                            <linearGradient id="Gradient4">
-                                            <stop class="heart-gradient-top" offset="0%" />
-                                            <stop class="heart-gradient-bottom" offset="100%" />
-                                            </linearGradient>
-                                        </defs>
-                                        <path id="heart-checked-4" class="heart-checked" fill="url(#Gradient4)" d="M133.7,211.9l81-81c19.9-20,22.8-52.7,4-73.6a52,52,0,0,0-75.5-2.1L128,70.5,114.9,57.3c-20-19.9-52.7-22.8-73.6-4a52,52,0,0,0-2.1,75.5l83.1,83.1A8.1,8.1,0,0,0,133.7,211.9Z"/>
-                                    </svg>
-                                </label>
-                            </div>
-                        </div>
-                    </article>
-                </a>
+                        </article>
+                    </div>
+                </div>
             </section>
         </main>
         <footer class="footer-container">
