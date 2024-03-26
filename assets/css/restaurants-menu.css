@@ -186,6 +186,11 @@ h3, h4, h5, h6 {
             margin-right: -80px;
         }
     }
+    input[type="checkbox"]:not(:checked) + label:hover .save-icon-container {
+        margin-right: -10px;
+        background-color: var(--tertiary-color);
+        opacity: 0.35;
+    }
     .save-icon-checkbox {
         display: none;
     }
@@ -218,12 +223,6 @@ h3, h4, h5, h6 {
 
 .slideInLeft-400 {
     animation: 400ms ease-in slideInLeft;
-}
-
-input[type="checkbox"]:not(:checked) + label:hover .save-icon-container {
-    margin-right: -10px;
-    background-color: var(--tertiary-color);
-    opacity: 0.35;
 }
 
 /*input[type="checkbox"]:checked + label:hover .save-icon-container {
