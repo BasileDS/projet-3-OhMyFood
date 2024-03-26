@@ -126,6 +126,64 @@ h3 {
     color: #7E7E7E;
 }
 
+/****** Loader & dish elemens hover animation ******/
+.loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #FFFFFF;
+    z-index: 999;
+    visibility: hidden;
+    .loader p {
+        font-size: 5em;
+        line-height: 1;
+        font-family: Shrikhand;
+        margin: 0;
+    }
+}
+
+@keyframes loader {
+    0% { visibility: visible; }
+    99% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.loader-3000 {
+    animation: 2s loader;
+}
+
+@keyframes slideInLeft {
+    0% {
+        margin-top: -15px;
+        opacity: 0;
+    }
+    100%
+    {
+        margin-top: 0px;
+        opacity: 1;
+    }
+}
+
+.slideInLeft-200, .slideIn-200 {
+    animation: 200ms slideInLeft;
+}
+
+.slideInLeft-400, .slideIn-400 {
+    animation: 400ms slideInLeft;
+}
+
+.slideInLeft-600, .slideIn-600 {
+    animation: 600ms slideInLeft;
+}
+
+.slideInLeft-200, .slideInLeft-400, .slideInLeft-600 {
+    animation-delay: 2s;
+}
+
 /****** Footer style ******/
 .footer-container {
     padding: var(--global-padding-left-right);
@@ -157,7 +215,6 @@ h3 {
         }
     }
 }
-
 
 /****** Desktop version ******/
 @media (min-width: 1025px) {
