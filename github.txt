@@ -1,1 +1,5 @@
+GITHUB Repository :
 https://github.com/BasileDS/projet-3-OhMyFood
+
+GITHUB Pages :
+https://basileds.github.io/projet-3-OhMyFood/
